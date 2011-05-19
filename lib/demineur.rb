@@ -1,0 +1,2 @@
+class Demineur
+end
