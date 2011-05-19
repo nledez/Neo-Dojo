@@ -11,6 +11,11 @@ describe Demineur do
 
   it "grid3" do
     grid = Demineur.new([[0, 1, 0], [0, 1, 0],[0, 1, 0]])
-    grid.size.should == 3 
+    grid.size.should == 3
+  end
+  
+  it "griddisplay" do
+    grid = Demineur.new([[1, 0], [1, 0]])
+    grid.text.should == "1 0\n1 0"
   end
 end
