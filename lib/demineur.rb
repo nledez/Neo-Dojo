@@ -1,9 +1,12 @@
 class Demineur
+  def initialize(grid)
+    @grid = grid 
+  end
   def size
     4
   end
 
   def mine?(x, y)
-    0
-  end
+    @grid[x][y]
+  end 
 end
