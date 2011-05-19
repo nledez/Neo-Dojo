@@ -17,5 +17,7 @@ describe Demineur do
   it "griddisplay" do
     grid = Demineur.new([[1, 0], [1, 0]])
     grid.text.should == "1 0\n1 0"
+    grid = Demineur.new([[0, 1], [0, 1]])
+    grid.text.should == "0 1\n0 1"
   end
 end

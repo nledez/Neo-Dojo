@@ -8,7 +8,7 @@ class Demineur
   end
 
   def text
-   "1 0\n1 0" 
+   @grid.map{ |l| "#{l.join(" ")}"}.join("\n")
   end
 
   def mine?(x, y)
